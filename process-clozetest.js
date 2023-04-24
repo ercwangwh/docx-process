@@ -19,7 +19,7 @@ const doc = new Docxtemplater().loadZip(zip);
 // 提取题目内容并映射到模板中的变量
 // const data = { questions: [] };
 // let match;
-const inputContent = fs.readFileSync("input-test.docx", "binary");
+const inputContent = fs.readFileSync("input2.docx", "binary");
 const inputZip = new PizZip(inputContent);
 const inputDoc = new Docxtemplater().loadZip(inputZip);
 const text = inputDoc.getFullText();

@@ -1,32 +1,4 @@
 function extractClozetestChoice(arr) {
-  // const regex =
-  //   /^(\d+\.?)?\s*([A-D])\.\s*(\S+)\s*([A-D])\.\s*(\S+)\s*([A-D])\.\s*(\S+)\s*([A-D])\.\s*(\S+)/;
-
-  // const matches = str.match(regex);
-
-  // if (matches) {
-  //   const [
-  //     ,
-  //     number,
-  //     optionA,
-  //     valueA,
-  //     optionB,
-  //     valueB,
-  //     optionC,
-  //     valueC,
-  //     optionD,
-  //     valueD,
-  //   ] = matches;
-  //   return {
-  //     number: number ? number.replace(".", "") : "",
-  //     A: valueA,
-  //     B: valueB,
-  //     C: valueC,
-  //     D: valueD,
-  //   };
-  // } else {
-  //   return null;
-  // }
   let result = arr.map((str) => {
     const regex = /^(\d{1,2})\.?\s?A\.\s(.*?)B\.\s(.*?)C\.\s(.*?)D\.\s(.*)/;
     const match = str.match(regex);
